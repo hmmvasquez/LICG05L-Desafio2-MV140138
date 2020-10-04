@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejercicio 4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/vehiculos.css">
+  </head>
+  <body>
+    <div class="container">
+        <button type="button" class="btn btn-outline-warning" onclick="window.location.href='/index.html'">Menú</button>
+        <div class="form-group pull-right"></div>
+        <div class="busqueda">
+            <input type="text" class="search form-control" placeholder="Busqueda Rapida">
+            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ2M3B0IiB2aWV3Qm94PSIwIDAgNDYzIDQ2My45OTk1IiB3aWR0aD0iNDYzcHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTQ2My4xNDA2MjUgMjMwLjY0MDYyNXYxLjM1OTM3NWMtLjM3ODkwNiAxMjcuNjIxMDk0LTEwNC4wMzkwNjMgMjMwLjgyODEyNS0yMzEuNjYwMTU2IDIzMC42NDA2MjUtMTI3LjYyMTA5NC0uMTg3NS0yMzAuOTgwNDY5LTEwMy42OTkyMTktMjMwLjk4MDQ2OS0yMzEuMzIwMzEzIDAtMTI3LjYyMTA5MyAxMDMuMzU5Mzc1LTIzMS4xMzI4MTIgMjMwLjk4MDQ2OS0yMzEuMzIwMzEyIDEyNy42MjEwOTMtLjE4NzUgMjMxLjI4MTI1IDEwMy4wMTk1MzEgMjMxLjY2MDE1NiAyMzAuNjQwNjI1em0wIDAiIGZpbGw9IiM0MjRlZGUiLz48cGF0aCBkPSJtNDYzLjE0MDYyNSAyMzAuNjQwNjI1djEuMzU5Mzc1Yy0uMDM5MDYzIDczLjA4NTkzOC0zNC40OTIxODcgMTQxLjg4NjcxOS05MyAxODUuNjkxNDA2LTU4LjUwMzkwNiA0My44MDQ2ODgtMTM0LjIyMjY1NiA1Ny40OTIxODgtMjA0LjM2MzI4MSAzNi45NDkyMTlsLTc4LjYzNjcxOS03OC42NDA2MjUgMjY0LTI1NnptMCAwIiBmaWxsPSIjMmMzMzkyIi8+PHBhdGggZD0ibTM3NS4xNDA2MjUgMTg0YzAgNTMuMDE5NTMxLTQyLjk4NDM3NSA5Ni05NiA5Ni01My4wMTk1MzEgMC05Ni00Mi45ODA0NjktOTYtOTZzNDIuOTgwNDY5LTk2IDk2LTk2YzUzLjAxNTYyNSAwIDk2IDQyLjk4MDQ2OSA5NiA5NnptMCAwIiBmaWxsPSIjMDBkN2RmIi8+PHBhdGggZD0ibTgxLjQ4MDQ2OSAzNzAuMzM5ODQ0IDEyNC4wNzgxMjUtMTI0LjA3ODEyNSAxMS4zMTI1IDExLjMxMjUtMTI0LjA3NDIxOSAxMjQuMDc4MTI1em0wIDAiIGZpbGw9IiNhYjIzMDAiLz48cGF0aCBkPSJtMzU5LjE0MDYyNSAxODRoLTE2Yy0uMDQyOTY5LTM1LjMyODEyNS0yOC42NzE4NzUtNjMuOTYwOTM4LTY0LTY0di0xNmM0NC4xNjAxNTYuMDQ2ODc1IDc5Ljk0OTIxOSAzNS44MzU5MzggODAgODB6bTAgMCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" />
+        </div>
+        </div>
+        <div class="container">
+        <span class="counter pull-right"></span>
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered results">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th class="col-md-2 col-xs-2">Marca</th>
+                    <th class="col-md-3 col-xs-3">Modelo</th>
+                    <th class="col-md-2 col-xs-2">Tipo</th>
+                    <th class="col-md-2 col-xs-2">Color</th>
+                    <th class="col-md-2 col-xs-2">Año</th>
+                  </tr>
+                  <tr class="warning no-result">
+                    <td colspan="4"><i class="fa fa-warning"></i>No se encuentran resultados</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Toyota</td>
+                    <td>Corolla</td>
+                    <td>Sedan</td>
+                    <td>Gris</td>
+                    <td>2010</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Toyota</td>
+                    <td>Yaris</td>
+                    <td>Sedan</td>
+                    <td>Rojo</td>
+                    <td>2009</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Mazda</td>
+                    <td>CX-9</td>
+                    <td>Camioneta</td>
+                    <td>Cafe</td>
+                    <td>2010</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Mazda</td>
+                    <td>BT-50 PRO</td>
+                    <td>Pick Up</td>
+                    <td>Gris</td>
+                    <td>2008</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">5</th>
+                      <td>Mitsubishi</td>
+                      <td>Lancer</td>
+                      <td>Sedan</td>
+                      <td>Gris</td>
+                      <td>2008</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">6</th>
+                      <td>Mitsubishi</td>
+                      <td>Lancer</td>
+                      <td>Sedan</td>
+                      <td>Rojo</td>
+                      <td>2009</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">7</th>
+                      <td>Mitsubishi</td>
+                      <td>Outlander</td>
+                      <td>Camioneta</td>
+                      <td>Blanco</td>
+                      <td>2011</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/vehiculos.js"></script>
+  </body>
+</html>

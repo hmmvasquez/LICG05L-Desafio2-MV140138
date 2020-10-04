@@ -1,0 +1,45 @@
+body{
+    /*padding:20px 20px;*/
+    padding: 0.2rem;
+    margin: 0;
+    text-align: center;
+    background: #928DAB;
+  }
+
+  /*.table {
+      width: 100%;
+      height: 100%;
+  }*/
+
+  .btn {
+    font-family: 'Sansita Swashed', cursive, sans-serif;
+    margin-top: 2em;
+  }
+  
+  .results tr[visible='false'],
+  .no-result{
+    display:none;
+  }
+  
+  .results tr[visible='true']{
+    display:table-row;
+  }
+  
+  .counter{
+    padding:8px; 
+    color:#ccc;
+  }
+
+  img {
+      width: 32px;
+      margin-top: 2em;
+  }
+
+  input {
+    margin-top: 2em;
+    border-radius: 50%;
+  }
+
+  .busqueda {
+      display: flex;
+  }
