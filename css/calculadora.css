@@ -3,9 +3,17 @@
     margin: 0;
     text-align: center;
   }
+  
+  .list-inline-item {
+    font-family: 'Sansita Swashed', cursive, sans-serif;
+  }
 
   body {
     background: #928DAB;
+  }
+
+  h1 {
+    font-family: 'Sansita Swashed', cursive, sans-serif;
   }
 
   p {
@@ -14,7 +22,6 @@
 
   .btn {
     font-family: 'Sansita Swashed', cursive, sans-serif;
-    margin: 0.7rem;
   }
 
  .main {

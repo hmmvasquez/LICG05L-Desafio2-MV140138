@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/array.css">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="list-inline">
+            <li class="list-inline-item">Ejercicio 3: Ingresar y mostrar datos de un Array</li>
+        </ul>
+        <button type="button" class="btn btn-outline-warning" onclick="window.location.href='/index.html'">Menú</button>
+    </nav>
+    <div class="container">
+        <div class="row mt-4 justify-content-center">
+            <div class="form-group">
+                <div class="card ">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="dato1" placeholder="Ingrese dato 1">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="dato2"  placeholder="Ingrese dato 2">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="dato3"  placeholder="Ingrese dato 3">
+                        </div>
+                        <div class="form-group datoinput">
+                            <input type="text" class="form-control" id="dato4"  placeholder="Ingrese dato 4">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="dato5"  placeholder="Ingrese dato 5">
+                        </div>
+                        <button type="reset" class="btn btn-success" onclick="capturar();">Mostrar array</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ordenar">
+                <table class="table" id="tabla">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Dato</th>
+                      </tr>
+                    </thead>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="/js/array.js"></script>
+</body>
+</html>
