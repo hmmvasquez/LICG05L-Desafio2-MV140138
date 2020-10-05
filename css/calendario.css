@@ -3,14 +3,15 @@
     margin: 0;
     text-align: center;
   }
-
+  
   body {
     background: #928DAB;
   }
 
-  
-  .btn, .list-inline-item {
+  h1, li {
     font-family: 'Sansita Swashed', cursive, sans-serif;
   }
 
-
+  .btn {
+    font-family: 'Sansita Swashed', cursive, sans-serif;
+  }
